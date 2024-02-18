@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +8,30 @@
 </head>
 <body>
     <header class="menu__navegacao">
-        <a class="menu__navegacao__links" href="https://projeto-portifolio-pessoal.vercel.app/">Portifólio</a>
-        <a class="menu__navegacao__links" href="https://linktr.ee/guilhermepagio">Linktree</a>
+        <a class="menu__navegacao__links" target="_blank" href="https://projeto-portifolio-pessoal.vercel.app/">Portifólio</a>
+        <a class="menu__navegacao__links" target="_blank" href="https://linktr.ee/guilhermepagio">Linktree</a>
     </header>
     <main class="painel">
         <section class="painel__esquerdo">
-            <textarea class="painel__esquerdo__textarea" name="" id="" placeholder="Digite seu texto"></textarea>
-            <div class="painel_esquerdo_botoes">
-                <button class="painel_esquerdo_botoes_botao">
-                    Criptografar
-                </button>
-                <button class="painel_esquerdo_botoes_botao">
-                    Descriptografar
-                </button>
+            <div class="painel__esquerdo__interagivel">
+                <textarea class="painel__esquerdo__interagivel__textarea" name="" id="" placeholder="Digite seu texto"></textarea>
+                <div class="painel__esquerdo__interagivel__botoes">
+                    <button class="painel__esquerdo__interagivel__botoes__botao__esquerda">
+                        Criptografar
+                    </button>
+                    <button class="painel__esquerdo__interagivel__botoes__botao__direita">
+                        Descriptografar
+                    </button>
+                </div>
             </div>
         </section>
         <section class="painel__direito">
-
+            <div class="painel__direito__interagivel">
+                <div class="painel__direito__interagivel__texto">
+                    Nenhum texto foi digitado
+                </div>
+            </div>
         </section>
     </main>
-    <footer></footer>
 </body>
 </html>
