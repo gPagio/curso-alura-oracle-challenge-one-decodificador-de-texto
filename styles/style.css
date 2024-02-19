@@ -143,4 +143,5 @@ a:visited{
     font-size: 2rem;
     border-radius: 24px;
     padding: 2%;
+    overflow-wrap: break-word;
 }

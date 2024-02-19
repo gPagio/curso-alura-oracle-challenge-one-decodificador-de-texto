@@ -1,10 +1,29 @@
-var mensagem = "U2FsdGVkX19YbkR4vaWg6FR6G/LN8y6VbtjRKOPaTbU=";
-var chave = "curso-alura-oracle-challenge-one-decodificador-de-texto";
-
-function criptografar(mensagem) {
-    console.log(CryptoJS.AES.encrypt(mensagem, chave).toString());
+function criptografar() {
+    const mensagem = getTextoDigitado();
+    try {
+        exibirNaTela(window.btoa(mensagem).toString());
+    } catch (error) {
+        console.log(`Não foi possivel criptografar a mensagem ${mensagem}. Segue a Stack Trace`, error)
+    }
 }
 
-function descriptografar(mensagem){
-    console.log(CryptoJS.AES.decrypt(mensagem, chave).toString(CryptoJS.enc.Utf8));
+function descriptografar() {
+    const mensagem = getTextoDigitado();
+    try {
+        exibirNaTela(window.atob(mensagem).toString());
+    } catch (error) {
+        console.log(`A mensagem ${mensagem} não está corretamente codificada em base64: `, error);
+    }
+}
+
+function getTextoDigitado(){
+    return document.querySelector('.painel__esquerdo__interagivel__textarea').value;
+}
+
+function exibirNaTela(mensagem){
+    if (!mensagem || mensagem.length === 0) {
+        document.querySelector('.painel__direito__interagivel__texto').textContent = "Nenhum texto foi digitado";
+    } else {
+        document.querySelector('.painel__direito__interagivel__texto').textContent = mensagem;
+    }
 }
