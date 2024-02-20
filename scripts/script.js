@@ -1,19 +1,23 @@
 function criptografar() {
     const mensagem = getTextoDigitado();
-    try {
-        exibirNaTela(window.btoa(mensagem).toString());
-    } catch (error) {
-        console.log(`Não foi possivel criptografar a mensagem ${mensagem}. Segue a Stack Trace`, error)
-    }
+    const mensagemCriptografada = mensagem
+        .replace(/e/g, "enter")
+        .replace(/i/g, "imes")
+        .replace(/a/g, "ai")
+        .replace(/o/g, "ober")
+        .replace(/u/g, "ufat");
+    exibirNaTela(mensagemCriptografada);
 }
 
 function descriptografar() {
-    const mensagem = getTextoDigitado();
-    try {
-        exibirNaTela(window.atob(mensagem).toString());
-    } catch (error) {
-        console.log(`A mensagem ${mensagem} não está corretamente codificada em base64: `, error);
-    }
+    const mensagemCriptografada = getTextoDigitado();
+    const mensagemDescriptografada = mensagemCriptografada
+        .replace(/enter/g, "e")
+        .replace(/imes/g, "i")
+        .replace(/ai/g, "a")
+        .replace(/ober/g, "o")
+        .replace(/ufat/g, "u");
+    exibirNaTela(mensagemDescriptografada);
 }
 
 function getTextoDigitado(){
