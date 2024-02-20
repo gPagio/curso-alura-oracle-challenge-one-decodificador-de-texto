@@ -20,8 +20,18 @@ function descriptografar() {
     exibirNaTela(mensagemDescriptografada);
 }
 
+function copiarParaAreaTransferencia() {
+    var texto = getTextoExibido();
+    console.log(texto);
+    navigator.clipboard.writeText(texto);
+}
+
 function getTextoDigitado(){
     return document.querySelector('.painel__esquerdo__interagivel__textarea').value;
+}
+
+function getTextoExibido(){
+    return document.querySelector('.painel__direito__interagivel__texto').textContent.trim();
 }
 
 function exibirNaTela(mensagem){

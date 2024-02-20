@@ -9,11 +9,11 @@
     --cor-fundo-principal: #E5E5E5;
     --cor-fundo-secundario: white;
 
-    --cor-botao-esquerda: #072B61;
-    --cor-hover-botao-esquerda: var(--cor-fonte-principal);
+    --cor-botao-criptografar: #072B61;
+    --cor-hover-botao-criptografar: var(--cor-fonte-principal);
 
-    --cor-botao-direita: #EFF1FA;
-    --cor-hover-botao-direita: var(--cor-fundo-secundario);
+    --cor-botao-descriptografar: #EFF1FA;
+    --cor-hover-botao-descriptografar: var(--cor-fundo-secundario);
 }
 
 * {
@@ -24,7 +24,7 @@
 body {
     box-sizing: border-box;
     color: var(--cor-fonte-secundaria);
-    background-color: var(--cor-botao-esquerda);
+    background-color: var(--cor-botao-criptografar);
 }
 
 a:visited{
@@ -95,34 +95,49 @@ a:visited{
     height: 10%;
 }
 
-.painel__esquerdo__interagivel__botoes__botao__esquerda{
+.painel__esquerdo__interagivel__botoes__botao__criptografar{
     width: 100%;
     height: 100%;
     border-radius: 24px;
     font-size: 1rem;
-    background-color: var(--cor-botao-esquerda);
+    background-color: var(--cor-botao-criptografar);
     color: var(--cor-fonte-secundaria);
     border: 0.0625rem solid;
     border-color: var(--cor-fonte-principal);
 }
 
-.painel__esquerdo__interagivel__botoes__botao__esquerda:hover{
-    background-color: var(--cor-hover-botao-esquerda);
+.painel__esquerdo__interagivel__botoes__botao__criptografar:hover{
+    background-color: var(--cor-hover-botao-criptografar);
 }
 
-.painel__esquerdo__interagivel__botoes__botao__direita{
+.painel__esquerdo__interagivel__botoes__botao__descriptografar{
     width: 100%;
     height: 100%;
     border-radius: 24px;
     font-size: 1rem;
-    background-color: var(--cor-botao-direita);
+    background-color: var(--cor-botao-descriptografar);
     color: var(--cor-fonte-principal);
     border: 0.0625rem solid;
     border-color: var(--cor-fonte-principal);
 }
 
-.painel__esquerdo__interagivel__botoes__botao__direita:hover{
-    background-color: var(--cor-hover-botao-direita);
+.painel__esquerdo__interagivel__botoes__botao__descriptografar:hover{
+    background-color: var(--cor-hover-botao-descriptografar);
+}
+
+.painel__esquerdo__interagivel__botoes__botao__copiar{
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    font-size: 1rem;
+    background-color: var(--cor-botao-criptografar);
+    color: var(--cor-fonte-secundaria);
+    border: 0.0625rem solid;
+    border-color: var(--cor-fonte-principal);
+}
+
+.painel__esquerdo__interagivel__botoes__botao__copiar:hover{
+    background-color: var(--cor-hover-botao-criptografar);
 }
 
 .painel__direito{
