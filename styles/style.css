@@ -239,6 +239,15 @@ a:visited{
 }
 
 @media (max-width: 414px){
+
+    a{
+        text-decoration: none;
+    }
+    
+    a:visited{
+        color: inherit;
+    }
+
     .painel{
         flex-direction: column;
     }
