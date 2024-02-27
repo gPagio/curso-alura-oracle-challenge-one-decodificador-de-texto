@@ -115,6 +115,7 @@ a:visited{
 
 .painel__esquerdo__interagivel__botoes__botao__criptografar:hover{
     background-color: var(--cor-hover-botao-criptografar);
+    cursor: pointer;
 }
 
 .painel__esquerdo__interagivel__botoes__botao__descriptografar{
@@ -130,6 +131,7 @@ a:visited{
 
 .painel__esquerdo__interagivel__botoes__botao__descriptografar:hover{
     background-color: var(--cor-hover-botao-descriptografar);
+    cursor: pointer;
 }
 
 .painel__esquerdo__interagivel__botoes__botao__copiar{
@@ -145,6 +147,7 @@ a:visited{
 
 .painel__esquerdo__interagivel__botoes__botao__copiar:hover{
     background-color: var(--cor-hover-botao-criptografar);
+    cursor: pointer;
 }
 
 .painel__direito{
